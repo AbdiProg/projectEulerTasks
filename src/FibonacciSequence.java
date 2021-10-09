@@ -8,7 +8,7 @@ public class FibonacciSequence {
     }
 
     /**
-     * Iterative Version der Berechnung von Fibonacci
+     * Iterative Version der Berechnung von Fibonacci-Zahlen
      * @param n
      */
     public static void sumOfEvenFibonacciIterative(int n){
@@ -36,7 +36,7 @@ public class FibonacciSequence {
 
 
     /**
-     * Fibonacci
+     * Die Berechnung der Summe aller geraden Fibonaccizahlen.
      * @param n
      */
     public static void sumOfEvenFibonacciRecursive( int n){
