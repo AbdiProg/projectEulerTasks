@@ -36,33 +36,33 @@ public class FibonacciSequence {
 
 
     /**
-     *
+     * Fibonacci
      * @param n
      */
     public static void sumOfEvenFibonacciRecursive( int n){
 
-        recursiveHelper(0, 1, n);
+        recursiveHelper(0, 1, 0, n);
 
     }
 
     /**
-     *
+     * Rekursive Hilfsfunktion, um die beiden zusätzlichen Parameter wie die erste Zahl und die zweite Zahl in eine weitere Methode zu packen.
      * @param firstNumber
      * @param secondNumber
      * @param n
      */
-    public static void recursiveHelper(int firstNumber, int secondNumber , int n){
+    public static int recursiveHelper(int firstNumber, int secondNumber, int sum, int n){
 
         if(n == 1){
-            return;
+            return sum;
         }
 
         int tmpSum = firstNumber + secondNumber;
         System.out.println(tmpSum);
         firstNumber = secondNumber;
         secondNumber = tmpSum;
-
-        recursiveHelper(firstNumber, secondNumber, n-1);
+        sum = sum + secondNumber;
+        return recursiveHelper(firstNumber, secondNumber, sum, n-1);
 
     }
 
