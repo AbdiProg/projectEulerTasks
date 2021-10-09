@@ -1,6 +1,6 @@
 import java.net.StandardSocketOptions;
 
-public class Task1 {
+public class MultiplesOfNumber {
 
 
 
